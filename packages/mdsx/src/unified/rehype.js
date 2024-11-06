@@ -6,9 +6,9 @@ import path from 'node:path'
 import { parse, preprocess } from 'svelte/compiler'
 import { visit } from 'unist-util-visit'
 
-import { MDSX_COMPONENT_NAME, MDSX_FLOATING_COMPONENT_NAME } from './constants.js'
-import { escapeHtmlEntities } from './utils/escape-html-entities.js'
-import { getNamedExports } from './utils/get-named-exports.js'
+import { MDSX_COMPONENT_NAME, MDSX_FLOATING_COMPONENT_NAME } from '../constants.js'
+import { escapeHtmlEntities } from '../utils/escape-html-entities.js'
+import { getNamedExports } from '../utils/get-named-exports.js'
 
 /**
  * HTML tag-names that may be a parent of code content.

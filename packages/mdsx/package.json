@@ -22,6 +22,11 @@
     }
   },
   "dependencies": {
+    "@shikijs/twoslash": "^1.22.2",
+    "mdast-util-from-markdown": "^2.0.2",
+    "mdast-util-gfm": "^3.0.0",
+    "mdast-util-to-hast": "^13.2.0",
+    "mdast-util-to-markdown": "^2.1.2",
     "svelte": "^5.1.11",
     "unified": "^11.0.5",
     "unist-util-visit": "^5.0.0",
@@ -30,6 +35,7 @@
     "zimmerframe": "^1.1.2"
   },
   "devDependencies": {
-    "@types/hast": "^3.0.4"
+    "@types/hast": "^3.0.4",
+    "shiki": "^1.22.2"
   }
 }
