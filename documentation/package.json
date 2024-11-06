@@ -1,0 +1,14 @@
+{
+  "name": "@mdsx/documentation",
+  "type": "module",
+  "scripts": {
+    "postinstall": "svelte-kit sync"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.6",
+    "@sveltejs/kit": "^2.7.7",
+    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "svelte": "^5.1.11",
+    "vite": "^5.4.10"
+  }
+}
