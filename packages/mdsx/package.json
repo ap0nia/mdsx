@@ -25,10 +25,15 @@
     "@shikijs/twoslash": "^1.22.2",
     "@skeletonlabs/floating-ui-svelte": "^0.3.1",
     "bits-ui": "1.0.0-next.45",
+    "esrap": "^1.2.2",
+    "magic-string": "^0.30.12",
     "mdast-util-from-markdown": "^2.0.2",
     "mdast-util-gfm": "^3.0.0",
     "mdast-util-to-hast": "^13.2.0",
     "mdast-util-to-markdown": "^2.1.2",
+    "rehype-stringify": "^10.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.1",
     "svelte": "^5.1.11",
     "unified": "^11.0.5",
     "unist-util-visit": "^5.0.0",
@@ -37,6 +42,7 @@
     "zimmerframe": "^1.1.2"
   },
   "devDependencies": {
+    "@sveltejs/kit": "^2.7.7",
     "@types/hast": "^3.0.4",
     "shiki": "^1.22.2"
   }
