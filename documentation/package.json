@@ -9,6 +9,7 @@
     "@ap0nia/mdsx": "workspace:^",
     "@shikijs/rehype": "^1.22.2",
     "@shikijs/twoslash": "^1.22.2",
+    "@sveltejs/adapter-auto": "^3.3.1",
     "@sveltejs/adapter-static": "^3.0.6",
     "@sveltejs/kit": "^2.7.7",
     "@sveltejs/vite-plugin-svelte": "^4.0.0",

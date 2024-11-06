@@ -3,7 +3,8 @@
 import path from 'node:path'
 import url from 'node:url'
 
-import adapter from '@sveltejs/adapter-static'
+// import adapter from '@sveltejs/adapter-static'
+import adapter from '@sveltejs/adapter-auto'
 import { createTwoslasher } from '@ap0nia/mdsx/twoslash-svelte'
 import { withMdsx } from '@ap0nia/mdsx'
 import { rendererFloatingSvelte } from '@ap0nia/mdsx/floating-renderer-svelte'
