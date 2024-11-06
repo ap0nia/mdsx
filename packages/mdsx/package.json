@@ -21,6 +21,9 @@
       "svelte": "./src/*.svelte"
     }
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "vfile": "^6.0.3",
+    "yaml": "^2.6.0",
+    "zimmerframe": "^1.1.2"
+  }
 }
