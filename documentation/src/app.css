@@ -1,0 +1,153 @@
+@import '@shikijs/twoslash/style-rich.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+pre.shiki {
+  background: var(--shiki-dark-bg);
+}
+
+.v-popper {
+  display: inline;
+}
+
+.twoslash .twoslash-popup-container {
+  background: var(--shiki-dark-bg);
+  opacity: 100%;
+  pointer-events: auto;
+  transform: none;
+}
+
+.twoslash .twoslash-popup-container :not(.twoslash-query-presisted) {
+  position: relative;
+}
+
+/* Do not need to display this because arrow is displayed by floating-ui. */
+.twoslash .twoslash-popup-arrow {
+  display: none;
+}
+
+/*
+ * https://github.com/vuejs/vitepress/blob/867b256e14858df7a8cf9935e45e5bf233782be5/src/client/theme-default/styles/components/vp-code.css#L2
+ */
+.vp-code span {
+  color: var(--shiki-dark, inherit);
+}
+
+.v-popper--theme-twoslash .v-popper__inner {
+  background: var(--shiki-dark-bg);
+  color: var(--twoslash-popup-color);
+  border-color: var(--twoslash-border-color);
+}
+
+.v-popper__arrow-container {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+
+.v-popper__arrow-inner,
+.v-popper__arrow-outer {
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+
+.v-popper__arrow-inner {
+  visibility: hidden;
+  border-width: 7px;
+  border-color: var(--shiki-dark-bg) !important;
+}
+
+.v-popper__arrow-outer {
+  border-width: 6px;
+  border-color: var(--shiki-dark-bg) !important;
+}
+
+.v-popper__popper[data-popper-placement^='top'] .v-popper__arrow-inner,
+.v-popper__popper[data-popper-placement^='bottom'] .v-popper__arrow-inner {
+  left: -2px;
+}
+
+.v-popper__popper[data-popper-placement^='top'] .v-popper__arrow-outer,
+.v-popper__popper[data-popper-placement^='bottom'] .v-popper__arrow-outer {
+  left: -1px;
+}
+
+.v-popper__popper[data-popper-placement^='top'] .v-popper__arrow-inner,
+.v-popper__popper[data-popper-placement^='top'] .v-popper__arrow-outer {
+  border-bottom-width: 0;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+}
+
+.v-popper__popper[data-popper-placement^='top'] .v-popper__arrow-inner {
+  top: -2px;
+}
+
+.v-popper__popper[data-popper-placement^='bottom'] .v-popper__arrow-container {
+  top: 0;
+}
+
+.v-popper__popper[data-popper-placement^='bottom'] .v-popper__arrow-inner,
+.v-popper__popper[data-popper-placement^='bottom'] .v-popper__arrow-outer {
+  border-top-width: 0;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-top-color: transparent !important;
+}
+
+.v-popper__popper[data-popper-placement^='bottom'] .v-popper__arrow-inner {
+  top: -4px;
+}
+
+.v-popper__popper[data-popper-placement^='bottom'] .v-popper__arrow-outer {
+  top: -6px;
+}
+
+.v-popper__popper[data-popper-placement^='left'] .v-popper__arrow-inner,
+.v-popper__popper[data-popper-placement^='right'] .v-popper__arrow-inner {
+  top: -2px;
+}
+
+.v-popper__popper[data-popper-placement^='left'] .v-popper__arrow-outer,
+.v-popper__popper[data-popper-placement^='right'] .v-popper__arrow-outer {
+  top: -1px;
+}
+
+.v-popper__popper[data-popper-placement^='right'] .v-popper__arrow-inner,
+.v-popper__popper[data-popper-placement^='right'] .v-popper__arrow-outer {
+  border-left-width: 0;
+  border-left-color: transparent !important;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+}
+
+.v-popper__popper[data-popper-placement^='right'] .v-popper__arrow-inner {
+  left: -4px;
+}
+
+.v-popper__popper[data-popper-placement^='right'] .v-popper__arrow-outer {
+  left: -6px;
+}
+
+.v-popper__popper[data-popper-placement^='left'] .v-popper__arrow-container {
+  right: -10px;
+}
+
+.v-popper__popper[data-popper-placement^='left'] .v-popper__arrow-inner,
+.v-popper__popper[data-popper-placement^='left'] .v-popper__arrow-outer {
+  border-right-width: 0;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+}
+
+.v-popper__popper[data-popper-placement^='left'] .v-popper__arrow-inner {
+  left: -2px;
+}

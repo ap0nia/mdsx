@@ -2,13 +2,24 @@
   "name": "@mdsx/documentation",
   "type": "module",
   "scripts": {
-    "postinstall": "svelte-kit sync"
+    "postinstall": "svelte-kit sync",
+    "dev": "vite"
   },
   "devDependencies": {
+    "@ap0nia/mdsx": "workspace:^",
+    "@shikijs/rehype": "^1.22.2",
+    "@shikijs/twoslash": "^1.22.2",
     "@sveltejs/adapter-static": "^3.0.6",
     "@sveltejs/kit": "^2.7.7",
     "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "autoprefixer": "^10.4.20",
+    "clsx": "^2.1.1",
+    "daisyui": "^4.12.14",
+    "postcss-load-config": "^6.0.1",
     "svelte": "^5.1.11",
-    "vite": "^5.4.10"
+    "svelte2tsx": "^0.7.22",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss": "^3.4.14",
+    "vite": "^5.0.3"
   }
 }

@@ -72,7 +72,7 @@ function createSvelteInstance(ast, file) {
   }
 
   if (file.data.floating) {
-    const floatingImportStatement = `\timport * as ${MDSX_FLOATING_COMPONENT_NAME} from '@ap0nia/mdsx2/floating-renderer-svelte-components/index';`
+    const floatingImportStatement = `\timport * as ${MDSX_FLOATING_COMPONENT_NAME} from '@ap0nia/mdsx/floating-renderer-components';`
 
     lines.push(floatingImportStatement)
   }

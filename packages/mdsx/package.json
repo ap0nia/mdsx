@@ -7,23 +7,30 @@
   "exports": {
     ".": {
       "types": "./src/index.d.ts",
+      "node": "./src/index.js",
       "import": "./src/index.js",
       "require": "./src/index.js",
       "default": "./src/index.js"
     },
     "./*": {
       "types": "./src/*.d.ts",
+      "node": "./src/*.js",
       "import": "./src/*.js",
       "require": "./src/*.js",
       "default": "./src/*.js"
     },
     "./*.svelte": {
+      "node": "./src/*.svelte",
+      "import": "./src/*.svelte",
+      "default": "./src/*.svelte",
       "svelte": "./src/*.svelte"
     }
   },
   "dependencies": {
+    "@jridgewell/sourcemap-codec": "^1.5.0",
     "@shikijs/twoslash": "^1.22.2",
     "@skeletonlabs/floating-ui-svelte": "^0.3.1",
+    "@volar/language-core": "^2.4.8",
     "bits-ui": "1.0.0-next.45",
     "esrap": "^1.2.2",
     "magic-string": "^0.30.12",
@@ -35,6 +42,9 @@
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.1",
     "svelte": "^5.1.11",
+    "svelte2tsx": "^0.7.22",
+    "twoslash": "^0.2.12",
+    "twoslash-protocol": "^0.2.12",
     "unified": "^11.0.5",
     "unist-util-visit": "^5.0.0",
     "vfile": "^6.0.3",
